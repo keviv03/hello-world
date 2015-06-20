@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Design Demo</title>
+		<style type="text/css">
+		body {
+			margin: 0px;
+		}
+		#demo::after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 100%;
+			border-bottom: 600px solid #EFD01B;
+			border-right: 250px solid rgba(16, 16, 197, 0);
+			/*border-top: 302px solid #EFD01B;*/
+		}
+		#demo {
+			width: 50%;
+			position: relative;
+			background-color: #EFD01B;
+			min-height: 600px;
+			float: left;
+		}
+		#demo-right::before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 100%;
+			border-top: 600px solid blue;
+			border-left: 250px solid rgba(16, 16, 197, 0);
+			/*border-top: 302px solid #EFD01B;*/
+		}
+		#demo-right {
+			width: 50%;
+			position: relative;
+			background-color: blue;
+			min-height: 600px;
+			float: right;
+		}
+		#rot {
+			/* Rotate div */
+		    -ms-transform: rotate(-21deg); /* IE 9 */
+		    -webkit-transform: rotate(-21deg); /* Chrome, Safari, Opera */
+		    transform: rotate(-21deg);
+		    padding: 50px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="demo"><div id="rot"><div><h1>Design Demo</h1></div>dadasdfdadasdfdadasdfdadasdfdadasdfdadasdf<br/>dadasdfdadasdfdadasdfdadasdfdadasdfdadasdf<br/>dadasdfdadasdfdadasdfdadasdfdadasdfdadasdf<br/>dadasdfdadasdfdadasdfdadasdfdadasdfdadasdf<br/></div></div>
+
+		<div id="demo-right"><div id="rot"><div><h1>Design Demo</h1></div>dadasdfdadasdfdadasdfdadasdfdadasdfdadasdf<br/>dadasdfdadasdfdadasdfdadasdfdadasdfdadasdf<br/>dadasdfdadasdfdadasdfdadasdfdadasdfdadasdf<br/>dadasdfdadasdfdadasdfdadasdfdadasdfdadasdf<br/></div></div>
+	</body>
+</html>
